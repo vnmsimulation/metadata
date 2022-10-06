@@ -17,7 +17,7 @@
       },
       {
          "version":"1.0.1.2",
-         "url":"https://github.com/vnmsimulation/pedal/releases/download/lastest/vnm_pedal_v1.0.1.2.signed.dfu",
+         "url":"https://github.com/vnmsimulation/pedal/releases/download/v1.0.1.2/vnm_pedal_v1.0.1.2.signed.dfu",
          "type":"pedal"
       },
        {
@@ -27,7 +27,7 @@
       },
       {
          "version":"1.0.2.0",
-         "url":"https://github.com/vnmsimulation/pedal/releases/download/lastest/vnm_pedal_v1.0.2.0.signed.dfu",
+         "url":"https://github.com/vnmsimulation/pedal/releases/download/v1.0.2.0/vnm_pedal_v1.0.2.0.signed.dfu",
          "type":"pedal"
       },
       {
