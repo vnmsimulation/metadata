@@ -34,6 +34,13 @@
          "version":"2.0.5.1",
          "url":"https://github.com/vnmsimulation/wheelbase/releases/download/lastest/vnm_wheelbase_v2.0.5.1.signed.dfu",
          "type":"wheelbase"
+      },
+      {
+         "version":"0.3.6.0",
+         "url":"https://raw.githubusercontent.com/vnmsimulation/VNM_MOTION_CONTROLLER/master/vnm_motion_controller_0.3.6.0.signed.dfu",
+         "type":"motion_controller"
       }
+	  
    ]
 }
+
