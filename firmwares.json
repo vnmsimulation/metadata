@@ -36,8 +36,8 @@
          "type":"wheelbase"
       },
       {
-         "version":"0.3.6.0",
-         "url":"https://raw.githubusercontent.com/vnmsimulation/VNM_MOTION_CONTROLLER/master/vnm_motion_controller_0.3.6.0.signed.dfu",
+         "version":"1.0.3.0",
+         "url":"https://raw.githubusercontent.com/vnmsimulation/VNM_MOTION_CONTROLLER/master/vnm_motion_controller.signed.dfu",
          "type":"motion_controller"
       }
 	  
