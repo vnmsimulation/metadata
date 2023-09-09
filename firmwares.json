@@ -41,8 +41,8 @@
          "type":"motion_controller"
       },
       {
-         "version":"1.0.0.2",
-         "url":"https://github.com/vnmsimulation/buttonbox/releases/download/v1.0.0.2/buttonbox_v1.0.0.2.signed.dfu",
+         "version":"1.0.0.6",
+         "url":"https://github.com/vnmsimulation/buttonbox/releases/download/v1.0.0.6/buttonbox_v1.0.0.6.signed.dfu",
          "type":"button_box"
       }
 	  
