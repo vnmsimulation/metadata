@@ -11,8 +11,8 @@
          "type":"shifter"
       },
 	  {
-         "version":"2.2.0.2",
-         "url":"https://github.com/vnmsimulation/shifter/releases/download/V2.2.0.2/vnm_shifter_v2.2.0.2.signed.dfu",
+         "version":"2.2.1.0",
+         "url":"https://github.com/vnmsimulation/shifter/releases/download/V2.2.1.0/vnm_shifter_v2.2.1.0.signed.dfu",
          "type":"shifter"
       },
       {
