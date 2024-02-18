@@ -48,8 +48,8 @@
          "type":"button_box"
       },
       {
-         "version":"1.0.1.9",
-         "url":"https://github.com/vnmsimulation/vnm_gt_steering_wheel_v1/releases/download/V1.0.1.9/vnm_gt_wheel_v1.0.1.9.signed.dfu",
+         "version":"1.0.1.13",
+         "url":"https://github.com/vnmsimulation/vnm_gt_steering_wheel_v1/releases/download/v1.0.1.13/vnm_gt_wheel_v1.0.1.13.signed.dfu",
          "type":"gt_steering_wheel_v1"
       },
       {
