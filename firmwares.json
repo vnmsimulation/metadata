@@ -52,8 +52,8 @@
             "url": "https://github.com/vnmsimulation/buttonbox/releases/download/v1.0.0.6/buttonbox_v1.0.0.6.signed.dfu",
             "type": "button_box_v1"
         }, {
-            "version": "1.0.0.10",
-            "url": "https://github.com/vnmsimulation/buttonbox/releases/download/v1.0.0.10/buttonbox_v1.0.0.10.signed.dfu",
+            "version": "1.0.0.11",
+            "url": "https://github.com/vnmsimulation/buttonbox/releases/download/v1.0.0.11/buttonbox_v1.0.0.11.signed.dfu",
             "type": "button_box_v1"
         }, {
             "version": "1.0.2.7",
