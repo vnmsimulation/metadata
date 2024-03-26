@@ -26,7 +26,7 @@
         }, {
             "version": "1.0.4.4",
             "url": "https://github.com/vnmsimulation/wheelbase/releases/download/wheelbase_v1_stm32f407_1.0.4.4/wheelbase_f407_1.0.4.4.signed.dfu",
-            "type": "wheelbase_v1"
+            "type": "diy_wheelbase_v1"
         }, {
             "version": "1.0.2.0",
             "url": "https://github.com/vnmsimulation/pedal/releases/download/v1.0.2.0/vnm_pedal_v1.0.2.0.signed.dfu",
@@ -34,14 +34,14 @@
         }, {
             "version": "2.0.5.1",
             "url": "https://github.com/vnmsimulation/wheelbase/releases/download/lastest/vnm_wheelbase_v2.0.5.1.signed.dfu",
-            "type": "wheelbase_v2"
+            "type": "diy_wheelbase_v2"
         }, {
             "version": "2.0.6.0",
             "url": "https://github.com/vnmsimulation/wheelbase/releases/download/v2.0.6.0/vnm_wheelbase_v2.0.6.0.signed.dfu",
-            "type": "wheelbase_v2"
+            "type": "diy_wheelbase_v2"
         }, {
-            "version": "1.0.0.40",
-            "url": "https://github.com/vnmsimulation/vnm_direct_drive/releases/download/V1.0.0.40/vnm_direct_drve_v1.0.0.40.signed.dfu",
+            "version": "1.0.0.44",
+            "url": "https://github.com/vnmsimulation/vnm_direct_drive/releases/download/V1.0.0.44/vnm_direct_drve_v1.0.0.44.signed.dfu",
             "type": "vnm_direct_drive"
         }, {
             "version": "1.0.4.6",
