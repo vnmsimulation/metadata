@@ -8,8 +8,8 @@
             "url": "https://github.com/vnmsimulation/shifter/releases/download/lastest/vnm.shifter.v2.0.0.7.signed.dfu",
             "type": "shifter"
         }, {
-            "version": "2.2.1.0",
-            "url": "https://github.com/vnmsimulation/shifter/releases/download/V2.2.1.0/vnm_shifter_v2.2.1.0.signed.dfu",
+            "version": "2.3.0.1",
+            "url": "https://github.com/vnmsimulation/shifter/releases/download/V2.3.0.1/vnm_shifter_v2.3.0.1.signed.dfu",
             "type": "shifter"
         }, {
             "version": "1.1.1.3",
