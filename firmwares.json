@@ -41,7 +41,7 @@
             "type": "diy_wheelbase_v2"
         }, {
             "version": "1.0.0.80",
-            "url": "https://github.com/vnmsimulation/vnm_direct_drive/releases/download/V1.0.0.80/vnm_direct_drve_v1.0.0.80.signed.dfu",
+            "url": "https://github.com/vnmsimulation/vnm_direct_drive/releases/download/V1.0.0.80/vnm_direct_drive_v1.0.0.80.signed.dfu",
             "type": "vnm_direct_drive"
         }, {
             "version": "1.0.0.44",
