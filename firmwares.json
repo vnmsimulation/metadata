@@ -5,7 +5,7 @@
             "type": "UI"
         }, {
             "version": "2.3.0.6",
-            "url": "https://github.com/vnmsimulation/shifter/releases/download/V2.3.0.6/vnm.shifter.v2.3.0.6.signed.dfu",
+            "url": "https://github.com/vnmsimulation/shifter/releases/download/V2.3.0.6/vnm_shifter_v2.3.0.6.signed.dfu",
             "type": "vnm_shifter_v1"
         }, {
             "version": "2.3.0.1",
