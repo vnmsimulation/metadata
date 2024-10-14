@@ -4,12 +4,12 @@
             "url": "https://github.com/VNMSimulation/ui/releases/download/v3.2.0.5/VNM.UI.v3.2.0.5.zip",
             "type": "UI"
         }, {
-            "version": "2.3.0.6",
-            "url": "https://github.com/vnmsimulation/shifter/releases/download/V2.3.0.6/vnm_shifter_v2.3.0.6.signed.dfu",
+            "version": "2.3.1.0",
+            "url": "https://github.com/vnmsimulation/shifter/releases/download/V2.3.1.0/vnm_shifter_v2.3.1.0.signed.dfu",
             "type": "vnm_shifter_v1"
         }, {
-            "version": "2.3.0.1",
-            "url": "https://github.com/vnmsimulation/shifter/releases/download/V2.3.0.1/vnm_shifter_v2.3.0.1.signed.dfu",
+            "version": "2.0.0.7",
+            "url": "https://github.com/vnmsimulation/shifter/releases/download/lastest/vnm.shifter.v2.0.0.7.signed.dfu",
             "type": "vnm_shifter_v1"
         }, {
             "version": "1.1.3.0",
