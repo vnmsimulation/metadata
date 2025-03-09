@@ -6,27 +6,33 @@
         }, {
             "version": "2.3.1.3",
             "url": "https://github.com/vnmsimulation/shifter/releases/download/lastest/vnm_shifter_v2.3.1.3.signed.dfu",
-            "type": "vnm_shifter_v1"
+            "type": "vnm_shifter_v1",
+			"pid": "A3D7"
         }, {
             "version": "2.0.0.7",
             "url": "https://github.com/vnmsimulation/shifter/releases/download/v2.0.0.7/vnm.shifter.v2.0.0.7.signed.dfu",
-            "type": "vnm_shifter_v1"
+            "type": "vnm_shifter_v1",
+			"pid": "A3D7"
         }, {
             "version": "1.1.3.0",
             "url": "https://github.com/vnmsimulation/handbrake/releases/download/V1.1.3.0/vnm_handbrake1.1.3.0.signed.dfu",
-            "type": "handbrake"
+            "type": "handbrake",
+			"pid": "A3DE"
         }, {
             "version": "1.1.2.0",
             "url": "https://github.com/vnmsimulation/handbrake/releases/download/V1.1.2.0/vnm_handbrake1.1.2.0.signed.dfu",
-            "type": "handbrake"
+            "type": "handbrake",
+			"pid": "A3DE"
         }, {
             "version": "1.0.3.1",
             "url": "https://github.com/vnmsimulation/pedal/releases/download/v1.0.3.1/vnm_pedal_v1.0.3.1.signed.dfu",
-            "type": "pedal"
+            "type": "pedal v1",
+			"pid": "A3DF"
         }, {
             "version": "1.0.2.0",
             "url": "https://github.com/vnmsimulation/pedal/releases/download/v1.0.2.0/vnm_pedal_v1.0.2.0.signed.dfu",
-            "type": "pedal"
+            "type": "pedal v1",
+			"pid": "A3DF"
         }, {
             "version": "1.0.4.4",
             "url": "https://github.com/vnmsimulation/wheelbase/releases/download/wheelbase_v1_stm32f407_1.0.4.4/wheelbase_f407_1.0.4.4.signed.dfu",
@@ -42,51 +48,58 @@
         }, {
             "version": "1.0.0.91",
             "url": "https://github.com/vnmsimulation/vnm_direct_drive/releases/download/v1.0.0.91/vnm_direct_drive_v1.0.0.91.signed.dfu",
-            "type": "vnm_direct_drive"
+            "type": "vnm_direct_drive",
+			"pid": "A3D5"
         },{
             "version": "1.0.0.109",
             "url": "https://github.com/vnmsimulation/vnm_direct_drive/releases/download/v1.0.0.109/vnm_direct_drive_v1.0.0.109.signed.dfu",
-            "type": "vnm_direct_drive"
+            "type": "vnm_direct_drive",
+			"pid": "A3D5"
         }, {
             "version": "1.0.0.44",
             "url": "https://github.com/vnmsimulation/vnm_direct_drive/releases/download/V1.0.0.44/vnm_direct_drve_v1.0.0.44.signed.dfu",
-            "type": "vnm_direct_drive"
+            "type": "vnm_direct_drive",
+			"pid": "A3D5"
         }, {
             "version": "1.0.4.6",
             "url": "https://github.com/vnmsimulation/VNM_MOTION_CONTROLLER/releases/download/V1.0.1.6/vnm_motion_controller_v1.0.4.6.signed.dfu",
-            "type": "motion_controller"
+            "type": "motion_controller",
+			"pid": "A3DD"
         }, {
             "version": "1.0.5.0",
             "url": "https://github.com/vnmsimulation/VNM_MOTION_CONTROLLER/releases/download/V1.0.5.0/vnm_motion_controller_v1.0.5.0.signed.dfu",
-            "type": "motion_controller"
+            "type": "motion_controller",
+			"pid": "A3DD"
         }, {
             "version": "1.0.0.6",
             "url": "https://github.com/vnmsimulation/buttonbox/releases/download/v1.0.0.6/buttonbox_v1.0.0.6.signed.dfu",
-            "type": "button_box_v1"
+            "type": "button_box_v1",
+			"pid": "A3DC"
         }, {
             "version": "1.0.1.3",
             "url": "https://github.com/vnmsimulation/buttonbox/releases/download/v1.0.1.3/buttonbox_v1.0.1.3.signed.dfu",
-            "type": "button_box_v1"
+            "type": "button_box_v1",
+			"pid": "A3DC"
         }, {
             "version": "1.0.4.2",
             "url": "https://github.com/vnmsimulation/vnm_gt_steering_wheel_v1/releases/download/V1.0.4.2/vnm_gt_steering_wheel_v1.0.4.2.signed.dfu",
-            "type": "gt_steering_wheel_v1"
+            "type": "gt_steering_wheel_v1",
+			"pid": "A3D9"
         }, {
             "version": "1.0.4.3",
             "url": "https://github.com/vnmsimulation/vnm_gt_steering_wheel_v1/releases/download/V1.0.4.3/vnm_gt_steering_wheel_v1.0.4.3.signed.dfu",
-            "type": "gt_steering_wheel_v1"
+            "type": "gt_steering_wheel_v1",
+			"pid": "A3D9"
         }, {
-            "version": "1.0.0.0",
-            "url": "https://github.com/vnmsimulation/VNM_GTX_STEERING_WHEEL/releases/download/V1.0.0.0/vnm_gtx_steering_wheel_1.0.0.0.signed.dfu",
-            "type": "gtx_steering_wheel_v1"
-        },{
             "version": "3.0.0.1",
             "url": "https://github.com/vnmsimulation/seq_shifter/releases/download/V3.0.0.1/vnm_seq_shifter_v3.0.0.1.signed.dfu",
-            "type": "seq_shifter"
+            "type": "seq_shifter",
+			"pid": "A3D8"
         }, {
             "version": "3.0.1.1",
             "url": "https://github.com/vnmsimulation/seq_shifter/releases/download/V3.0.1.1/vnm_seq_shifter_v3.0.1.1.signed.dfu",
-            "type": "seq_shifter"
+            "type": "seq_shifter",
+			"pid": "A3D8"
         }
     ]
 }
