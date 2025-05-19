@@ -64,8 +64,8 @@
             "type": "button_box_v1",
 			"pid": "A3DC"
         }, {
-            "version": "1.0.1.3",
-            "url": "https://github.com/vnmsimulation/buttonbox/releases/download/v1.0.1.3/buttonbox_v1.0.1.3.signed.dfu",
+            "version": "1.0.1.5",
+            "url": "https://github.com/vnmsimulation/buttonbox/releases/download/v1.0.1.5/buttonbox_v1.0.1.5.signed.dfu",
             "type": "button_box_v1",
 			"pid": "A3DC"
         }, {
