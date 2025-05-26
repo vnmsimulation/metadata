@@ -34,8 +34,8 @@
             "type": "pedal v1",
 			"pid": "A3DF"
         },{
-            "version": "1.0.0.91",
-            "url": "https://github.com/vnmsimulation/vnm_direct_drive/releases/download/v1.0.0.91/vnm_direct_drive_v1.0.0.91.signed.dfu",
+            "version": "1.0.0.111",
+            "url": "https://github.com/vnmsimulation/vnm_direct_drive/releases/download/v1.0.0.111/vnm_direct_drive_v1.0.0.111.signed.dfu",
             "type": "vnm_direct_drive",
 			"pid": "A3D5"
         },{
