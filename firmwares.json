@@ -69,14 +69,14 @@
             "type": "button_box_v1",
 			"pid": "A3DC"
         }, {
-            "version": "1.0.4.2",
-            "url": "https://github.com/vnmsimulation/vnm_gt_steering_wheel_v1/releases/download/V1.0.4.2/vnm_gt_steering_wheel_v1.0.4.2.signed.dfu",
-            "type": "gt_steering_wheel_v1",
-			"pid": "A3D9"
+            "version": "1.0.0.7",
+            "url": "https://github.com/vnmsimulation/VNM_APEX_STEERING_WHEEL/releases/download/V1.0.0.7/vnm_wheel_apex_v1.0.0.7.signed.dfu",
+            "type": "steering_wheel_apex_v1",
+			"pid": "A3DA"
         }, {
             "version": "1.0.4.3",
             "url": "https://github.com/vnmsimulation/vnm_gt_steering_wheel_v1/releases/download/V1.0.4.3/vnm_gt_steering_wheel_v1.0.4.3.signed.dfu",
-            "type": "gt_steering_wheel_v1",
+            "type": "steering_wheel_gt_v1",
 			"pid": "A3D9"
         }, {
             "version": "3.0.0.1",
