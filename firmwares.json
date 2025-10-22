@@ -44,8 +44,8 @@
             "type": "vnm_direct_drive",
 			"pid": "A3D5"
         }, {
-            "version": "1.0.4.6",
-            "url": "https://github.com/vnmsimulation/VNM_MOTION_CONTROLLER/releases/download/V1.0.1.6/vnm_motion_controller_v1.0.4.6.signed.dfu",
+            "version": "1.0.5.8",
+            "url": "https://github.com/vnmsimulation/VNM_MOTION_CONTROLLER/releases/download/V1.0.5.8/vnm_motion_controller_v1.0.5.8.signed.dfu",
             "type": "motion_controller",
 			"pid": "A3DD"
         }, {
