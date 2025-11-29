@@ -94,8 +94,8 @@
             "type": "seq_shifter",
 			"pid": "A3D8"
         }, {
-            "version": "2.0.0.16",
-            "url": "https://github.com/vnmsimulation/pedal/releases/download/V2.0.0.16/vnm_pedal_v2.0.0.16.signed.dfu",
+            "version": "2.0.1.0",
+            "url": "https://github.com/vnmsimulation/pedal/releases/download/V2.0.1.0/vnm_pedal_v2.0.1.0.signed.dfu",
             "type": "pedal v2",
 			"pid": "A4A8"
         }
