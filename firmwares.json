@@ -98,6 +98,11 @@
             "url": "https://github.com/vnmsimulation/pedal/releases/download/V2.0.1.0/vnm_pedal_v2.0.1.0.signed.dfu",
             "type": "pedal v2",
 			"pid": "A4A8"
+        }, {
+            "version": "2.0.0.27",
+            "url": "https://github.com/vnmsimulation/VNM_MOTION_CONTROLLER/releases/download/V2.0.0.27/vnm_motion_controller_stm32h742_v0.1.0.27.signed.dfu",
+            "type": "motion_controller_v2",
+			"pid": "A3DD"
         }
     ]
 }
