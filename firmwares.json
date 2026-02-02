@@ -56,14 +56,14 @@
       "pid": "A3D5"
     },
     {
-      "version": "1.0.1.3",
-      "url": "https://github.com/vnmsimulation/vnm_direct_drive/releases/download/v1.0.1.3/vnm_direct_drive_1.0.1.3.signed.dfu",
+      "version": "1.0.1.13",
+      "url": "https://github.com/vnmsimulation/vnm_direct_drive/releases/download/v1.0.1.13/vnm_direct_drive_1.0.1.13.signed.dfu",
       "type": "vnm_direct_drive",
       "pid": "A3D5"
     },
     {
-      "version": "1.0.1.13",
-      "url": "https://github.com/vnmsimulation/vnm_direct_drive/releases/download/v1.0.1.13/vnm_direct_drive_1.0.1.13.signed.dfu",
+      "version": "1.0.2.3",
+      "url": "https://github.com/vnmsimulation/vnm_direct_drive/releases/download/v1.0.2.3/vnm_direct_drive_1.0.2.3.signed.dfu",
       "type": "vnm_direct_drive",
       "pid": "A3D5"
     },
