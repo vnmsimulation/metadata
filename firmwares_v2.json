@@ -65,7 +65,8 @@
       "version": "1.0.1.13",
       "url": "https://github.com/vnmsimulation/vnm_direct_drive/releases/download/v1.0.1.13/vnm_direct_drive_1.0.1.13.signed.dfu",
       "type": "vnm_direct_drive",
-      "pid": "A3D5"
+      "pid": "A3D5",
+	  "checksum": "8c157fedc2ac7a336a53ac190df78ca96dda2291"
     },
     {
       "version": "1.0.5.8",
