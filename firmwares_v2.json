@@ -113,7 +113,8 @@
       "version": "1.0.4.5",
       "url": "https://github.com/vnmsimulation/vnm_gt_steering_wheel_v1/releases/download/V1.0.4.5/vnm_gt_steering_wheel_v1.0.4.5.signed.dfu",
       "type": "steering_wheel_gt_v1",
-      "pid": "A3D9"
+      "pid": "A3D9",
+	  "checksum": "7c4f254f2f28c58f3e648321ce374ffcdad3d0a5"
     },
     {
       "version": "3.0.0.1",
