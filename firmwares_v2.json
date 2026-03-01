@@ -35,13 +35,15 @@
       "type": "pedal v1",
       "pid": "A3DF"
     },
-    {
-      "version": "1.0.4.0",
-      "url": "https://github.com/vnmsimulation/pedal/releases/download/v1.0.4.0/vnm_pedal_v1.0.4.0.signed.dfu",
+	  {
+      "version": "1.0.4.1",
+      "url": "https://github.com/vnmsimulation/pedal/releases/download/v1.0.4.1/vnm_pedal_v1.0.4.1.signed.dfu",
       "type": "pedal v1",
-      "pid": "A3DF"
+      "pid": "A3DF",
+	  "bcd": "0201",
+	  "checksum": "4a53bf495e5ec84290836e64b06e7becc37b2241"	
     },
-	{
+    {
       "version": "1.0.4.0",
       "url": "https://github.com/vnmsimulation/pedal/releases/download/v1.0.4.0/vnm_pedal_v1.0.4.0.signed.dfu",
       "type": "pedal v1",
