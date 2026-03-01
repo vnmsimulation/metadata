@@ -137,7 +137,7 @@
       "version": "2.0.0.17",
       "url": "https://github.com/vnmsimulation/pedal/releases/download/v2.0.0.17/vnm_pedal_v2.0.0.17.signed.dfu",
       "type": "pedal v2",
-      "pid": "A3DF",
+      "pid": "A4A8",
 	  "bcd": "0200",
 	  "checksum": "dd661a8ad519e0a56cbea6ba62cdef45f1f810c7"	
     },
