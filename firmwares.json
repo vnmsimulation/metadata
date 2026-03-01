@@ -134,6 +134,14 @@
       "pid": "A4A8"
     },
     {
+      "version": "2.0.0.17",
+      "url": "https://github.com/vnmsimulation/pedal/releases/download/v2.0.0.17/vnm_pedal_v2.0.0.17.signed.dfu",
+      "type": "pedal v2",
+      "pid": "A3DF",
+	  "bcd": "0200",
+	  "checksum": "dd661a8ad519e0a56cbea6ba62cdef45f1f810c7"	
+    },
+    {
       "version": "2.0.0.27",
       "url": "https://github.com/vnmsimulation/VNM_MOTION_CONTROLLER/releases/download/V2.0.0.27/vnm_motion_controller_stm32h742_v0.1.0.27.signed.dfu",
       "type": "motion_controller_v2",
