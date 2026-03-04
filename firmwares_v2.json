@@ -138,12 +138,12 @@
       "pid": "A4A8"
     },
     {
-      "version": "2.0.0.17",
-      "url": "https://github.com/vnmsimulation/pedal/releases/download/v2.0.0.17/vnm_pedal_v2.0.0.17.signed.dfu",
+      "version": "2.0.2.0",
+      "url": "https://github.com/vnmsimulation/pedal/releases/download/v2.0.2.0/vnm_pedal_v2.0.2.0.signed.dfu",
       "type": "pedal v2",
       "pid": "A4A8",
       "bcd": "0200",
-      "checksum": "dd661a8ad519e0a56cbea6ba62cdef45f1f810c7"	
+      "checksum": "5230e57c4e0b90904201bf7c92f248565defaa8c"	
     },
     {
       "version": "2.0.0.27",
