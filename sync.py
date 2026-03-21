@@ -62,7 +62,7 @@ class SyncClient(discord.Client):
         async for thread in channel.archived_threads():
             threads.append(thread)
 
-        print(f"Found {len(threads)} threads. Scanning for new {FILE_EXTENSION} files...")
+        print(f"Found {len(threads)} threads. Scanning for new {', '.join(FILE_EXTENSIONS)} files...")
 
         for thread in threads:
             if thread.id in self.existing_ids:
