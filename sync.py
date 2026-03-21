@@ -115,9 +115,10 @@ class SyncClient(discord.Client):
                 with open(shard_path, "r") as f:
                     all_records.extend(json.load(f))
         
-        # Merge and sort by newest first
+        # Merge and sort by newest first, then by thread_id to keep them grouped
         all_records.extend(self.new_records)
-        all_records.sort(key=lambda x: x["timestamp"], reverse=True)
+        # We sort by timestamp DESC, then thread_id DESC to ensure grouping
+        all_records.sort(key=lambda x: (x["timestamp"], x["thread_id"]), reverse=True)
 
         # Re-shard
         total_records = len(all_records)
@@ -140,14 +141,17 @@ class SyncClient(discord.Client):
         with open(os.path.join(DB_DIR, "manifest.json"), "w") as f:
             json.dump(self.manifest, f, indent=2)
 
-        # Update search index
-        search_index = []
+        # Update search index (unique per thread_id to keep it small)
+        search_index_map = {}
         for rec in all_records:
-            search_index.append({
-                "id": rec["thread_id"],
-                "keywords": f"{rec['author_name']} {rec['thread_name']}".lower()
-            })
+            tid = rec["thread_id"]
+            if tid not in search_index_map:
+                search_index_map[tid] = {
+                    "id": tid,
+                    "keywords": f"{rec['author_name']} {rec['thread_name']}".lower()
+                }
         
+        search_index = list(search_index_map.values())
         with open(os.path.join(DB_DIR, "search_index.json"), "w") as f:
             json.dump(search_index, f, indent=2)
 
