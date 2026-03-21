@@ -72,16 +72,13 @@ class SyncClient(discord.Client):
             async for message in thread.history(limit=5, oldest_first=True):
                 for attachment in message.attachments:
                     if attachment.filename.endswith(FILE_EXTENSION):
-                        await self.process_attachment(thread, attachment)
-                        # We only take the first valid attachment per thread for now, 
-                        # or all? The requirement says "Identify all attachments".
-                        # Let's take all.
+                        await self.process_attachment(thread, attachment, message.author.name)
 
-    async def process_attachment(self, thread, attachment):
+    async def process_attachment(self, thread, attachment, author_name):
         filename = f"{thread.id}_{attachment.filename}"
         local_path = os.path.join(PROFILES_DIR, filename)
         
-        print(f"Downloading {attachment.filename} from thread '{thread.name}'...")
+        print(f"Downloading {attachment.filename} from thread '{thread.name}' by {author_name}...")
         
         try:
             response = requests.get(attachment.url)
@@ -92,7 +89,7 @@ class SyncClient(discord.Client):
                 record = {
                     "thread_id": thread.id,
                     "thread_name": thread.name,
-                    "author_name": thread.owner.name if thread.owner else "Unknown",
+                    "author_name": author_name,
                     "filename": filename,
                     "timestamp": thread.created_at.isoformat(),
                     "github_raw_url": GITHUB_RAW_BASE_URL + filename
