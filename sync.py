@@ -7,7 +7,7 @@ from datetime import datetime
 
 # Configuration
 FORUM_CHANNEL_ID = 1402645649748398130
-FILE_EXTENSION = ".vnmprofile"
+FILE_EXTENSIONS = [".vnmprofile", ".tmprofile"]
 PROFILES_DIR = "profiles"
 DB_DIR = "db"
 PAGE_SIZE = 100
@@ -71,7 +71,7 @@ class SyncClient(discord.Client):
             # Scan first 5 messages
             async for message in thread.history(limit=5, oldest_first=True):
                 for attachment in message.attachments:
-                    if attachment.filename.endswith(FILE_EXTENSION):
+                    if any(attachment.filename.endswith(ext) for ext in FILE_EXTENSIONS):
                         await self.process_attachment(thread, attachment, message.author.name, message.created_at)
 
     async def process_attachment(self, thread, attachment, author_name, timestamp):
