@@ -72,13 +72,14 @@ class SyncClient(discord.Client):
             async for message in thread.history(limit=5, oldest_first=True):
                 for attachment in message.attachments:
                     if any(attachment.filename.endswith(ext) for ext in FILE_EXTENSIONS):
-                        await self.process_attachment(thread, attachment, message.author.name, message.created_at)
+                        reaction_count = sum(r.count for r in message.reactions)
+                        await self.process_attachment(thread, attachment, message.author.name, message.created_at, reaction_count)
 
-    async def process_attachment(self, thread, attachment, author_name, timestamp):
+    async def process_attachment(self, thread, attachment, author_name, timestamp, reaction_count):
         filename = f"{thread.id}_{attachment.filename}"
         local_path = os.path.join(PROFILES_DIR, filename)
         
-        print(f"Downloading {attachment.filename} from thread '{thread.name}' by {author_name}...")
+        print(f"Downloading {attachment.filename} from thread '{thread.name}' by {author_name} ({reaction_count} reactions)...")
         
         try:
             response = requests.get(attachment.url)
@@ -90,7 +91,8 @@ class SyncClient(discord.Client):
                 file_info = {
                     "filename": filename,
                     "timestamp": timestamp.isoformat(),
-                    "github_raw_url": GITHUB_RAW_BASE_URL + filename
+                    "github_raw_url": GITHUB_RAW_BASE_URL + filename,
+                    "reaction_count": reaction_count
                 }
                 
                 # Find or create thread record
