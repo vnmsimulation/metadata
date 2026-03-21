@@ -309,7 +309,7 @@
             
             <div class="search-container">
                 <i data-lucide="search" class="search-icon"></i>
-                <input type="text" id="searchInput" class="search-input" placeholder="Search by author or wheel profile name...">
+                <input type="text" id="searchInput" class="search-input" placeholder="Search by author, profile name or type (e.g. DirectDrive)...">
             </div>
 
             <div class="stats" id="statsContainer">
@@ -389,6 +389,7 @@
                                 <div class="file-info">
                                     <div class="file-name">${file.filename.split('_').slice(1).join('_')}</div>
                                     <div class="file-meta">
+                                        <span style="color: var(--accent-color); font-weight: 600;">${file.profile_type || 'Unknown'}</span>
                                         <span>${file.filename.split('.').pop().toUpperCase()}</span>
                                         <span><i data-lucide="thumbs-up" style="width: 12px; height: 12px; display: inline; vertical-align: middle"></i> ${file.reaction_count || 0}</span>
                                     </div>

@@ -4,6 +4,7 @@ import json
 import requests
 import asyncio
 from datetime import datetime
+from decrypt_vnm import decrypt_vnm_profile, PROFILE_TYPE_MAP
 
 # Configuration
 FORUM_CHANNEL_ID = 1402645649748398130
@@ -87,12 +88,21 @@ class SyncClient(discord.Client):
                 with open(local_path, "wb") as f:
                     f.write(response.content)
                 
+                # Determine profile type
+                profile_type_str = "Unknown"
+                if attachment.filename.endswith(".vnmprofile"):
+                    profile = decrypt_vnm_profile(local_path)
+                    if profile:
+                        p_type = profile.get('ProfileType', 0)
+                        profile_type_str = PROFILE_TYPE_MAP.get(p_type, "Unknown")
+
                 # We'll store the core thread info and the file info separately for now
                 file_info = {
                     "filename": filename,
                     "timestamp": timestamp.isoformat(),
                     "github_raw_url": GITHUB_RAW_BASE_URL + filename,
-                    "reaction_count": reaction_count
+                    "reaction_count": reaction_count,
+                    "profile_type": profile_type_str
                 }
                 
                 # Find or create thread record
@@ -184,9 +194,10 @@ class SyncClient(discord.Client):
         # Update search index
         search_index = []
         for thread in thread_list:
+            profile_types = " ".join(set(f.get("profile_type", "Unknown") for f in thread["files"]))
             search_index.append({
                 "id": thread["thread_id"],
-                "keywords": f"{thread['author_name']} {thread['thread_name']}".lower()
+                "keywords": f"{thread['author_name']} {thread['thread_name']} {profile_types}".lower()
             })
         
         with open(os.path.join(DB_DIR, "search_index.json"), "w") as f:
