@@ -72,9 +72,9 @@ class SyncClient(discord.Client):
             async for message in thread.history(limit=5, oldest_first=True):
                 for attachment in message.attachments:
                     if attachment.filename.endswith(FILE_EXTENSION):
-                        await self.process_attachment(thread, attachment, message.author.name)
+                        await self.process_attachment(thread, attachment, message.author.name, message.created_at)
 
-    async def process_attachment(self, thread, attachment, author_name):
+    async def process_attachment(self, thread, attachment, author_name, timestamp):
         filename = f"{thread.id}_{attachment.filename}"
         local_path = os.path.join(PROFILES_DIR, filename)
         
@@ -89,7 +89,7 @@ class SyncClient(discord.Client):
                 # We'll store the core thread info and the file info separately for now
                 file_info = {
                     "filename": filename,
-                    "timestamp": attachment.created_at.isoformat(),
+                    "timestamp": timestamp.isoformat(),
                     "github_raw_url": GITHUB_RAW_BASE_URL + filename
                 }
                 
