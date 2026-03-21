@@ -17,7 +17,7 @@ The profiles are synchronized from Discord and served as a sharded JSON database
 3.  **Search**: Use `db/search_index.json` for fast local keyword searching (Author + Thread Name).
     - URL: `https://files.vnmsimulation.com/db/search_index.json`
 
-4.  **Download Profiles**: Use the `github_raw_url` field in the record to download the `.vnmprofile` file.
+4.  **Download Profiles**: Use the `files` array within each record to access the filenames and download URLs.
 
 ### Sync Workflow
 The synchronization runs every hour via GitHub Actions. You can check the status in the [Actions tab](../../actions).

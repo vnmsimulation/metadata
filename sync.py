@@ -86,15 +86,30 @@ class SyncClient(discord.Client):
                 with open(local_path, "wb") as f:
                     f.write(response.content)
                 
-                record = {
-                    "thread_id": thread.id,
-                    "thread_name": thread.name,
-                    "author_name": author_name,
+                # We'll store the core thread info and the file info separately for now
+                file_info = {
                     "filename": filename,
-                    "timestamp": thread.created_at.isoformat(),
+                    "timestamp": attachment.created_at.isoformat(),
                     "github_raw_url": GITHUB_RAW_BASE_URL + filename
                 }
-                self.new_records.append(record)
+                
+                # Find or create thread record
+                thread_record = None
+                for rec in self.new_records:
+                    if rec["thread_id"] == thread.id:
+                        thread_record = rec
+                        break
+                
+                if not thread_record:
+                    thread_record = {
+                        "thread_id": thread.id,
+                        "thread_name": thread.name,
+                        "author_name": author_name,
+                        "files": []
+                    }
+                    self.new_records.append(thread_record)
+                
+                thread_record["files"].append(file_info)
             else:
                 print(f"Failed to download attachment: {response.status_code}")
         except Exception as e:
@@ -105,30 +120,53 @@ class SyncClient(discord.Client):
             print("No new records to save.")
             return
 
-        print(f"Adding {len(self.new_records)} new records...")
+        print(f"Adding records from {len(self.new_records)} new threads...")
 
         # Load all existing records
-        all_records = []
+        all_threads = {}
         for i in range(1, self.manifest.get("total_pages", 0) + 1):
             shard_path = os.path.join(DB_DIR, f"page_{i}.json")
             if os.path.exists(shard_path):
                 with open(shard_path, "r") as f:
-                    all_records.extend(json.load(f))
+                    data = json.load(f)
+                    for thread in data:
+                        all_threads[thread["thread_id"]] = thread
         
-        # Merge and sort by newest first, then by thread_id to keep them grouped
-        all_records.extend(self.new_records)
-        # We sort by timestamp DESC, then thread_id DESC to ensure grouping
-        all_records.sort(key=lambda x: (x["timestamp"], x["thread_id"]), reverse=True)
+        # Merge new records into existing ones
+        for new_thread in self.new_records:
+            tid = new_thread["thread_id"]
+            if tid in all_threads:
+                # Merge files, avoid duplicates
+                existing_filenames = {f["filename"] for f in all_threads[tid]["files"]}
+                for f in new_thread["files"]:
+                    if f["filename"] not in existing_filenames:
+                        all_threads[tid]["files"].append(f)
+            else:
+                all_threads[tid] = new_thread
+
+        # Convert back to list and sort by the LATEST file timestamp in each thread
+        thread_list = list(all_threads.values())
+        for thread in thread_list:
+            # Sort files within thread by timestamp DESC
+            thread["files"].sort(key=lambda x: x["timestamp"], reverse=True)
+            # Use top file's timestamp for thread sorting
+            thread["_sort_key"] = thread["files"][0]["timestamp"]
+
+        thread_list.sort(key=lambda x: (x["_sort_key"], x["thread_id"]), reverse=True)
+
+        # Cleanup sort key before saving
+        for thread in thread_list:
+            del thread["_sort_key"]
 
         # Re-shard
-        total_records = len(all_records)
+        total_records = len(thread_list)
         total_pages = (total_records + PAGE_SIZE - 1) // PAGE_SIZE
 
         for i in range(total_pages):
             page_num = i + 1
             start = i * PAGE_SIZE
             end = start + PAGE_SIZE
-            shard_data = all_records[start:end]
+            shard_data = thread_list[start:end]
             shard_path = os.path.join(DB_DIR, f"page_{page_num}.json")
             with open(shard_path, "w") as f:
                 json.dump(shard_data, f, indent=2)
@@ -141,17 +179,14 @@ class SyncClient(discord.Client):
         with open(os.path.join(DB_DIR, "manifest.json"), "w") as f:
             json.dump(self.manifest, f, indent=2)
 
-        # Update search index (unique per thread_id to keep it small)
-        search_index_map = {}
-        for rec in all_records:
-            tid = rec["thread_id"]
-            if tid not in search_index_map:
-                search_index_map[tid] = {
-                    "id": tid,
-                    "keywords": f"{rec['author_name']} {rec['thread_name']}".lower()
-                }
+        # Update search index
+        search_index = []
+        for thread in thread_list:
+            search_index.append({
+                "id": thread["thread_id"],
+                "keywords": f"{thread['author_name']} {thread['thread_name']}".lower()
+            })
         
-        search_index = list(search_index_map.values())
         with open(os.path.join(DB_DIR, "search_index.json"), "w") as f:
             json.dump(search_index, f, indent=2)
 
