@@ -1,2 +1,429 @@
-<center>VNM FILESTORE<br>
-VNM SIMULATION JSC.</center>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VNM Simulation | Profile Gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        :root {
+            --bg-color: #0a0c10;
+            --card-bg: rgba(255, 255, 255, 0.03);
+            --card-border: rgba(255, 255, 255, 0.08);
+            --accent-color: #00a2ff;
+            --accent-glow: rgba(0, 162, 255, 0.4);
+            --text-primary: #ffffff;
+            --text-secondary: #94a3b8;
+            --glass-blur: blur(12px);
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            min-height: 100vh;
+            overflow-x: hidden;
+            background-image: 
+                radial-gradient(circle at 20% 20%, rgba(0, 162, 255, 0.05) 0%, transparent 40%),
+                radial-gradient(circle at 80% 80%, rgba(0, 162, 255, 0.05) 0%, transparent 40%);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+            animation: fadeInDown 0.8s ease-out;
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            letter-spacing: -0.05em;
+            margin-bottom: 12px;
+            background: linear-gradient(135deg, #fff 0%, #00a2ff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .subtitle {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto 30px;
+        }
+
+        /* Search Section */
+        .search-container {
+            position: relative;
+            max-width: 500px;
+            margin: 0 auto 50px;
+        }
+
+        .search-input {
+            width: 100%;
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 16px;
+            padding: 16px 20px 16px 50px;
+            color: white;
+            font-size: 1rem;
+            backdrop-filter: var(--glass-blur);
+            transition: var(--transition);
+        }
+
+        .search-input:focus {
+            outline: none;
+            border-color: var(--accent-color);
+            box-shadow: 0 0 20px var(--accent-glow);
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .search-icon {
+            position: absolute;
+            left: 18px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text-secondary);
+            pointer-events: none;
+        }
+
+        /* Stats Section */
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-bottom: 40px;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        .stat-item span {
+            color: var(--accent-color);
+            font-weight: 600;
+            margin-left: 5px;
+        }
+
+        /* Gallery Grid */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+            gap: 24px;
+        }
+
+        .profile-card {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 20px;
+            padding: 24px;
+            backdrop-filter: var(--glass-blur);
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+            animation: fadeInUp 0.6s ease-out backwards;
+        }
+
+        .profile-card:hover {
+            transform: translateY(-8px) scale(1.02);
+            border-color: var(--accent-color);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4), 0 0 20px rgba(0, 162, 255, 0.1);
+            background: rgba(255, 255, 255, 0.06);
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+
+        .thread-name {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: white;
+            line-height: 1.4;
+            flex: 1;
+            margin-right: 15px;
+        }
+
+        .author-badge {
+            background: rgba(0, 162, 255, 0.1);
+            color: var(--accent-color);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+        .files-list {
+            list-style: none;
+            flex: 1;
+        }
+
+        .file-item {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--card-border);
+            border-radius: 12px;
+            padding: 12px 16px;
+            margin-bottom: 12px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: var(--transition);
+        }
+
+        .file-item:hover {
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .file-info {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            overflow: hidden;
+        }
+
+        .file-name {
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: #efefef;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .file-meta {
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .download-btn {
+            background: var(--accent-color);
+            color: white;
+            width: 36px;
+            height: 36px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            cursor: pointer;
+            transition: var(--transition);
+            text-decoration: none;
+        }
+
+        .download-btn:hover {
+            background: #2cb2ff;
+            transform: scale(1.1);
+            box-shadow: 0 0 15px var(--accent-glow);
+        }
+
+        .card-footer {
+            margin-top: 20px;
+            padding-top: 15px;
+            border-top: 1px solid var(--card-border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .reaction-count {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            color: #ff4757;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .timestamp {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+        }
+
+        /* Animations */
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Loading Spinner */
+        #loader {
+            grid-column: 1 / -1;
+            text-align: center;
+            padding: 50px;
+        }
+
+        .spinner {
+            width: 40px;
+            height: 40px;
+            border: 3px solid rgba(255,255,255,0.1);
+            border-top-color: var(--accent-color);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            display: inline-block;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            h1 { font-size: 2rem; }
+            .stats { gap: 20px; flex-wrap: wrap; }
+            .gallery-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Profile Gallery</h1>
+            <p class="subtitle">Discover and download the best VNM Simulation wheel profiles created by the community.</p>
+            
+            <div class="search-container">
+                <i data-lucide="search" class="search-icon"></i>
+                <input type="text" id="searchInput" class="search-input" placeholder="Search by author or wheel profile name...">
+            </div>
+
+            <div class="stats" id="statsContainer">
+                <div class="stat-item">Profiles: <span id="totalRecords">...</span></div>
+                <div class="stat-item">Last Sync: <span id="lastSync">...</span></div>
+            </div>
+        </header>
+
+        <main id="galleryGrid" class="gallery-grid">
+            <div id="loader">
+                <div class="spinner"></div>
+                <p style="margin-top: 15px; color: var(--text-secondary)">Syncing with Discord...</p>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        // Init Lucide icons
+        lucide.createIcons();
+
+        const galleryGrid = document.getElementById('galleryGrid');
+        const searchInput = document.getElementById('searchInput');
+        let allProfiles = [];
+        let manifest = {};
+
+        async function init() {
+            try {
+                // Fetch Manifest
+                const manifestRes = await fetch('db/manifest.json');
+                manifest = await manifestRes.json();
+                
+                document.getElementById('totalRecords').textContent = manifest.total_records;
+                const syncDate = new Date(manifest.last_sync_time);
+                document.getElementById('lastSync').textContent = syncDate.toLocaleDateString();
+
+                // Fetch all pages
+                const pagePromises = [];
+                for (let i = 1; i <= manifest.total_pages; i++) {
+                    pagePromises.push(fetch(`db/page_${i}.json`).then(r => r.json()));
+                }
+
+                const pages = await Promise.all(pagePromises);
+                allProfiles = pages.flat();
+                
+                renderGallery(allProfiles);
+            } catch (err) {
+                console.error('Error loading gallery:', err);
+                galleryGrid.innerHTML = `<p style="grid-column: 1/-1; text-align: center; color: #ff4757">Failed to load profiles. Please try again later.</p>`;
+            }
+        }
+
+        function renderGallery(profiles) {
+            galleryGrid.innerHTML = '';
+            
+            if (profiles.length === 0) {
+                galleryGrid.innerHTML = `<p style="grid-column: 1/-1; text-align: center; color: var(--text-secondary); margin-top: 40px;">No profiles found matching your search.</p>`;
+                return;
+            }
+
+            profiles.forEach((profile, index) => {
+                const card = document.createElement('div');
+                card.className = 'profile-card';
+                card.style.animationDelay = `${index * 0.05}s`;
+
+                // Calculate total reactions for the thread (max from any message)
+                const totalReactions = Math.max(...profile.files.map(f => f.reaction_count || 0));
+                const latestUpdate = new Date(profile.files[0].timestamp).toLocaleDateString();
+
+                card.innerHTML = `
+                    <div class="card-header">
+                        <div class="thread-name">${profile.thread_name}</div>
+                        <div class="author-badge">@${profile.author_name}</div>
+                    </div>
+                    <ul class="files-list">
+                        ${profile.files.map(file => `
+                            <li class="file-item">
+                                <div class="file-info">
+                                    <div class="file-name">${file.filename.split('_').slice(1).join('_')}</div>
+                                    <div class="file-meta">
+                                        <span>${file.filename.split('.').pop().toUpperCase()}</span>
+                                        <span><i data-lucide="thumbs-up" style="width: 12px; height: 12px; display: inline; vertical-align: middle"></i> ${file.reaction_count || 0}</span>
+                                    </div>
+                                </div>
+                                <a href="${file.github_raw_url}" class="download-btn" title="Download ${file.filename}">
+                                    <i data-lucide="download" style="width: 18px; height: 18px"></i>
+                                </a>
+                            </li>
+                        `).join('')}
+                    </ul>
+                    <div class="card-footer">
+                        <div class="reaction-count">
+                            <i data-lucide="heart" style="width: 16px; height: 16px; fill: #ff4757"></i>
+                            <span>${totalReactions}</span>
+                        </div>
+                        <div class="timestamp">Updated ${latestUpdate}</div>
+                    </div>
+                `;
+                
+                galleryGrid.appendChild(card);
+            });
+            
+            lucide.createIcons();
+        }
+
+        searchInput.addEventListener('input', (e) => {
+            const query = e.target.value.toLowerCase();
+            const filtered = allProfiles.filter(p => 
+                p.thread_name.toLowerCase().includes(query) || 
+                p.author_name.toLowerCase().includes(query)
+            );
+            renderGallery(filtered);
+        });
+
+        init();
+    </script>
+</body>
+</html>
