@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VNM Simulation | Community Profiles</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
@@ -33,7 +35,7 @@
             color: var(--text-primary);
             min-height: 100vh;
             overflow-x: hidden;
-            background-image: 
+            background-image:
                 radial-gradient(circle at 20% 20%, rgba(0, 162, 255, 0.05) 0%, transparent 40%),
                 radial-gradient(circle at 80% 80%, rgba(0, 162, 255, 0.05) 0%, transparent 40%);
         }
@@ -264,13 +266,27 @@
 
         /* Animations */
         @keyframes fadeInDown {
-            from { opacity: 0; transform: translateY(-20px); }
-            to { opacity: 1; transform: translateY(0); }
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         @keyframes fadeInUp {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         /* Loading Spinner */
@@ -283,7 +299,7 @@
         .spinner {
             width: 40px;
             height: 40px;
-            border: 3px solid rgba(255,255,255,0.1);
+            border: 3px solid rgba(255, 255, 255, 0.1);
             border-top-color: var(--accent-color);
             border-radius: 50%;
             animation: spin 1s linear infinite;
@@ -291,26 +307,39 @@
         }
 
         @keyframes spin {
-            to { transform: rotate(360deg); }
+            to {
+                transform: rotate(360deg);
+            }
         }
 
         /* Responsive */
         @media (max-width: 768px) {
-            h1 { font-size: 2rem; }
-            .stats { gap: 20px; flex-wrap: wrap; }
-            .gallery-grid { grid-template-columns: 1fr; }
+            h1 {
+                font-size: 2rem;
+            }
+
+            .stats {
+                gap: 20px;
+                flex-wrap: wrap;
+            }
+
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <header>
             <h1>Community Profiles</h1>
             <p class="subtitle">Discover and download the best VNM Simulation profiles created by the community.</p>
-            
+
             <div class="search-container">
                 <i data-lucide="search" class="search-icon"></i>
-                <input type="text" id="searchInput" class="search-input" placeholder="Search by author, profile name or type (e.g. DirectDrive)...">
+                <input type="text" id="searchInput" class="search-input"
+                    placeholder="Search by author, profile name or type (e.g. DirectDrive)...">
             </div>
 
             <div class="stats" id="statsContainer">
@@ -341,7 +370,7 @@
                 // Fetch Manifest
                 const manifestRes = await fetch(`db/manifest.json?t=${Date.now()}`);
                 manifest = await manifestRes.json();
-                
+
                 document.getElementById('totalRecords').textContent = manifest.total_records;
                 const syncDate = new Date(manifest.last_sync_time);
                 document.getElementById('lastSync').textContent = syncDate.toLocaleDateString();
@@ -356,7 +385,7 @@
                 const pages = await Promise.all(pagePromises);
                 allProfiles = pages.flat();
                 console.log('Loaded profiles:', allProfiles);
-                
+
                 renderGallery(allProfiles);
             } catch (err) {
                 console.error('Error loading gallery:', err);
@@ -366,7 +395,7 @@
 
         function renderGallery(profiles) {
             galleryGrid.innerHTML = '';
-            
+
             if (profiles.length === 0) {
                 galleryGrid.innerHTML = `<p style="grid-column: 1/-1; text-align: center; color: var(--text-secondary); margin-top: 40px;">No profiles found matching your search.</p>`;
                 return;
@@ -394,7 +423,6 @@
                                     <div class="file-meta">
                                         <span style="color: var(--accent-color); font-weight: 600;">${file.profile_type || 'Unknown'}</span>
                                         <span>${file.filename.split('.').pop().toUpperCase()}</span>
-                                        <span><i data-lucide="thumbs-up" style="width: 12px; height: 12px; display: inline; vertical-align: middle"></i> ${file.reaction_count || 0}</span>
                                     </div>
                                 </div>
                                 <a href="${file.github_raw_url}" class="download-btn" title="Download ${file.filename}">
@@ -411,17 +439,17 @@
                         <div class="timestamp">Updated ${latestUpdate}</div>
                     </div>
                 `;
-                
+
                 galleryGrid.appendChild(card);
             });
-            
+
             lucide.createIcons();
         }
 
         searchInput.addEventListener('input', (e) => {
             const query = e.target.value.toLowerCase();
-            const filtered = allProfiles.filter(p => 
-                p.thread_name.toLowerCase().includes(query) || 
+            const filtered = allProfiles.filter(p =>
+                p.thread_name.toLowerCase().includes(query) ||
                 p.author_name.toLowerCase().includes(query)
             );
             renderGallery(filtered);
@@ -430,4 +458,5 @@
         init();
     </script>
 </body>
+
 </html>
