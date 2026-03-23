@@ -71,6 +71,14 @@
 	  "checksum": "8c157fedc2ac7a336a53ac190df78ca96dda2291"
     },
     {
+      "version": "1.0.2.6",
+      "url": "https://github.com/vnmsimulation/vnm_direct_drive/releases/download/v1.0.2.6/vnm_direct_drive_1.0.2.6.signed.dfu",
+      "type": "vnm_direct_drive",
+      "pid": "A3D5",
+      "bcd": "0200",
+      "checksum": "a2cf2cef90e59a8094d2d2a88d51328d5095dcdb"	
+    },
+    {
       "version": "1.0.5.8",
       "url": "https://github.com/vnmsimulation/VNM_MOTION_CONTROLLER/releases/download/V1.0.5.8/vnm_motion_controller_v1.0.5.8.signed.dfu",
       "type": "motion_controller",
@@ -146,10 +154,26 @@
       "checksum": "5230e57c4e0b90904201bf7c92f248565defaa8c"	
     },
     {
-      "version": "2.0.0.27",
-      "url": "https://github.com/vnmsimulation/VNM_MOTION_CONTROLLER/releases/download/V2.0.0.27/vnm_motion_controller_stm32h742_v0.1.0.27.signed.dfu",
+      "version": "2.0.2.1",
+      "url": "https://github.com/vnmsimulation/pedal/releases/download/v2.0.2.1/vnm_pedal_v2.0.2.1.signed.dfu",
+      "type": "pedal v2",
+      "pid": "A4A8",
+      "bcd": "0200",
+      "checksum": "579acbbcd50e2b9e020db3a662313e4398da9e42"	
+    },
+    {
+      "version": "0.1.0.27",
+      "url": "https://github.com/vnmsimulation/VNM_MOTION_CONTROLLER/releases/download/v0.1.0.27/vnm_motion_controller_stm32h742_v0.1.0.27.signed.dfu",
       "type": "motion_controller_v2",
       "pid": "A3DD"
+    },
+    {
+      "version": "0.1.0.28",
+      "url": "https://github.com/vnmsimulation/VNM_MOTION_CONTROLLER/releases/download/v0.1.0.28/vnm_motion_controller_stm32h742_v0.1.0.28.signed.dfu",
+      "type": "motion_controller_v2",
+      "pid": "A3DD",
+      "bcd": "0202",
+      "checksum": "f50aebe95cf1103a9d3d4ba68b3104bbedae7517"	
     }
   ]
 }
