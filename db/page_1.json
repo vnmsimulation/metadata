@@ -1,5 +1,26 @@
 [
   {
+    "thread_id": 1486810792769749002,
+    "thread_name": "LMU GT3 TIC Mode on VNM Supreme 25Nm",
+    "author_name": "christianwuttke",
+    "files": [
+      {
+        "filename": "1486810792769749002_LMU.vnmprofile.tmprofile",
+        "timestamp": "2026-03-26T19:35:16.605000+00:00",
+        "github_raw_url": "https://files.vnmsimulation.com/profiles/1486810792769749002_LMU.vnmprofile.tmprofile",
+        "reaction_count": 1,
+        "profile_type": "Unknown"
+      },
+      {
+        "filename": "1486810792769749002_LMU.vnmprofile",
+        "timestamp": "2026-03-26T19:35:16.605000+00:00",
+        "github_raw_url": "https://files.vnmsimulation.com/profiles/1486810792769749002_LMU.vnmprofile",
+        "reaction_count": 1,
+        "profile_type": "DirectDrive"
+      }
+    ]
+  },
+  {
     "thread_id": 1480105715069878434,
     "thread_name": "LMU Full Telemetry Profile",
     "author_name": "christianwuttke",
