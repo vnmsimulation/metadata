@@ -1,5 +1,26 @@
 [
   {
+    "thread_id": 1489679081971646574,
+    "thread_name": "LMU 1.3 GT3 TIC Mode on 25Nm Supreme - happy place -",
+    "author_name": "christianwuttke",
+    "files": [
+      {
+        "filename": "1489679081971646574_LMU_2.tmprofile.vnmprofile",
+        "timestamp": "2026-04-03T17:32:50.041000+00:00",
+        "github_raw_url": "https://files.vnmsimulation.com/profiles/1489679081971646574_LMU_2.tmprofile.vnmprofile",
+        "reaction_count": 2,
+        "profile_type": "DirectDrive"
+      },
+      {
+        "filename": "1489679081971646574_LMU_TELE.tmprofile",
+        "timestamp": "2026-04-03T17:32:50.041000+00:00",
+        "github_raw_url": "https://files.vnmsimulation.com/profiles/1489679081971646574_LMU_TELE.tmprofile",
+        "reaction_count": 2,
+        "profile_type": "Unknown"
+      }
+    ]
+  },
+  {
     "thread_id": 1486810792769749002,
     "thread_name": "LMU GT3 TIC Mode on VNM Supreme 25Nm",
     "author_name": "christianwuttke",
