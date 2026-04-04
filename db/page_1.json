@@ -16,7 +16,7 @@
         "timestamp": "2026-04-03T17:32:50.041000+00:00",
         "github_raw_url": "https://files.vnmsimulation.com/profiles/1489679081971646574_LMU_TELE.tmprofile",
         "reaction_count": 2,
-        "profile_type": "Unknown"
+        "profile_type": "Telemetry"
       }
     ]
   },
@@ -30,7 +30,7 @@
         "timestamp": "2026-03-26T19:35:16.605000+00:00",
         "github_raw_url": "https://files.vnmsimulation.com/profiles/1486810792769749002_LMU.vnmprofile.tmprofile",
         "reaction_count": 1,
-        "profile_type": "Unknown"
+        "profile_type": "Telemetry"
       },
       {
         "filename": "1486810792769749002_LMU.vnmprofile",

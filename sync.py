@@ -90,7 +90,7 @@ class SyncClient(discord.Client):
                 
                 # Determine profile type
                 profile_type_str = "Unknown"
-                if attachment.filename.endswith(".vnmprofile"):
+                if attachment.filename.endswith((".vnmprofile", ".tmprofile")):
                     profile = decrypt_vnm_profile(local_path)
                     if profile:
                         p_type = profile.get('ProfileType', 0)
