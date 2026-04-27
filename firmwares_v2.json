@@ -103,12 +103,12 @@
       "pid": "A3DC"
     },
     {
-      "version": "1.0.1.0",
-      "url": "https://github.com/vnmsimulation/VNM_APEX_STEERING_WHEEL/releases/download/v1.0.1.0/vnm_wheel_apex_v1.0.1.0.signed.dfu",
+      "version": "1.0.1.2",
+      "url": "https://github.com/vnmsimulation/VNM_APEX_STEERING_WHEEL/releases/download/v1.0.1.2/vnm_wheel_apex_v1.0.1.2.signed.dfu",
       "type": "steering_wheel_apex_v1",
       "pid": "A3DA",
       "bcd": "0200",
-      "checksum": "391419e29997b7a56efa707220d8d69b7ac7c95d"
+      "checksum": "8bd8262f1d7736b06df78809b24559942ccd5836"
     },
     {
       "version": "1.0.1.1",
