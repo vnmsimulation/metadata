@@ -77,6 +77,14 @@
       "checksum": "a2cf2cef90e59a8094d2d2a88d51328d5095dcdb"	
     },
     {
+      "version": "1.0.2.9",
+      "url": "https://github.com/vnmsimulation/vnm_direct_drive/releases/download/v1.0.2.9/vnm_direct_drive_1.0.2.9.signed.dfu",
+      "type": "vnm_direct_drive",
+      "pid": "A3D5",
+      "bcd": "0200",
+      "checksum": "311dc02576e66c22ba423b7a68cf6da90d955be7"	
+    },
+    {
       "version": "1.0.5.8",
       "url": "https://github.com/vnmsimulation/VNM_MOTION_CONTROLLER/releases/download/V1.0.5.8/vnm_motion_controller_v1.0.5.8.signed.dfu",
       "type": "motion_controller",
