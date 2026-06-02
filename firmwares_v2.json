@@ -30,12 +30,12 @@
 	    "checksum": "e65127330243977e59f35646053c7c01f21bff99a"	
     },
     {
-      "version": "1.1.4.1",
-      "url": "https://github.com/vnmsimulation/handbrake/releases/download/v1.1.4.1/vnm_handbrake_v1.1.4.1.signed.dfu",
+      "version": "1.1.4.3",
+      "url": "https://github.com/vnmsimulation/handbrake/releases/download/v1.1.4.3/vnm_handbrake_v1.1.4.3.signed.dfu",
       "type": "handbrake",
       "pid": "A3DE",
       "bcd": "0200",
-	    "checksum": "edf734584abc5087437e1ce9fdb6955a7b29e1c2"	
+	    "checksum": "fea8129fe9bab01b9913f7851eaabb874a9adb94"	
     },
 	  {
       "version": "1.0.4.1",

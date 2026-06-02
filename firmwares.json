@@ -24,8 +24,8 @@
       "pid": "A3DE"
     },
     {
-      "version": "1.1.4.1",
-      "url": "https://github.com/vnmsimulation/handbrake/releases/download/v1.1.4.1/vnm_handbrake_v1.1.4.1.signed.dfu",
+      "version": "1.1.4.3",
+      "url": "https://github.com/vnmsimulation/handbrake/releases/download/v1.1.4.3/vnm_handbrake_v1.1.4.3.signed.dfu",
       "type": "handbrake",
       "pid": "A3DE"
     },
