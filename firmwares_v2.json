@@ -22,6 +22,14 @@
 	    "checksum": "0efa5a2f88eddd49a6ba6ad3ee464ed09b28f82a"	
     },
     {
+      "version": "2.3.1.10",
+      "url": "https://github.com/vnmsimulation/shifter/releases/download/v2.3.1.10/vnm_shifter_v2.3.1.10.signed.dfu",
+      "type": "vnm_shifter_v1",
+      "pid": "A3D7",
+      "bcd": "0200",
+	    "checksum": "1818c77b7afaff7baad4a56739f24a7d35b76dbb"	
+    },
+    {
       "version": "1.1.4.2",
       "url": "https://github.com/vnmsimulation/handbrake/releases/download/v1.1.4.2/vnm_handbrake_v1.1.4.2.signed.dfu",
       "type": "handbrake",
