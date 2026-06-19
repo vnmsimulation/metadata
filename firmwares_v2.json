@@ -145,6 +145,14 @@
 	    "checksum": "60789c6c5eb01477cd04bb073dea7e3f903bf59e"
     },
     {
+      "version": "1.0.4.8",
+      "url": "https://github.com/vnmsimulation/vnm_gt_steering_wheel_v1/releases/download/v1.0.4.8/vnm_wheel_gt_v1.0.4.8.signed.dfu",
+      "type": "steering_wheel_gt_v1",
+      "pid": "A3D9",
+      "bcd": "0200",
+	    "checksum": "16cadb8c414391d6c4e0254c7fe2f38f16fd5ae4"
+    },
+    {
       "version": "3.0.0.1",
       "url": "https://github.com/vnmsimulation/seq_shifter/releases/download/V3.0.0.1/vnm_seq_shifter_v3.0.0.1.signed.dfu",
       "type": "seq_shifter",
