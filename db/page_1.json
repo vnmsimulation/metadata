@@ -1,5 +1,26 @@
 [
   {
+    "thread_id": 1521292742636994712,
+    "thread_name": "TIC LMU ELITE",
+    "author_name": "l.marcos",
+    "files": [
+      {
+        "filename": "1521292742636994712_Tic_LMU.tmprofile",
+        "timestamp": "2026-06-29T23:41:18.066000+00:00",
+        "github_raw_url": "https://files.vnmsimulation.com/profiles/1521292742636994712_Tic_LMU.tmprofile",
+        "reaction_count": 0,
+        "profile_type": "Telemetry"
+      },
+      {
+        "filename": "1521292742636994712_Tic_LMU.tmprofile.vnmprofile",
+        "timestamp": "2026-06-29T23:14:37.312000+00:00",
+        "github_raw_url": "https://files.vnmsimulation.com/profiles/1521292742636994712_Tic_LMU.tmprofile.vnmprofile",
+        "reaction_count": 0,
+        "profile_type": "DirectDrive"
+      }
+    ]
+  },
+  {
     "thread_id": 1511109470258725045,
     "thread_name": "LMU TIC Supreme 25Nm",
     "author_name": "vaultboy90",
