@@ -1,5 +1,26 @@
 [
   {
+    "thread_id": 1523377045411856394,
+    "thread_name": "ACR 0.5 UPDATE VNM PREMIER @10NM",
+    "author_name": "empc808",
+    "files": [
+      {
+        "filename": "1523377045411856394_acr050726.vnmprofile",
+        "timestamp": "2026-07-05T17:18:08.339000+00:00",
+        "github_raw_url": "https://files.vnmsimulation.com/profiles/1523377045411856394_acr050726.vnmprofile",
+        "reaction_count": 0,
+        "profile_type": "DirectDrive"
+      },
+      {
+        "filename": "1523377045411856394_acrTLMT050726.vnmprofile.tmprofile",
+        "timestamp": "2026-07-05T17:18:08.339000+00:00",
+        "github_raw_url": "https://files.vnmsimulation.com/profiles/1523377045411856394_acrTLMT050726.vnmprofile.tmprofile",
+        "reaction_count": 0,
+        "profile_type": "Telemetry"
+      }
+    ]
+  },
+  {
     "thread_id": 1523075218350932039,
     "thread_name": "iRacing TIC 25nm on Xtreme  (GT3)",
     "author_name": "dudedudude8268",
