@@ -1,5 +1,26 @@
 [
   {
+    "thread_id": 1531377176694489118,
+    "thread_name": "iRacing 25nM Supreme TIC - Solid Road Feel",
+    "author_name": "peter_35473",
+    "files": [
+      {
+        "filename": "1531377176694489118_iRacing-TIC30-Road-Texture-Feel-Supreme.vnmprofile",
+        "timestamp": "2026-07-27T19:06:10.536000+00:00",
+        "github_raw_url": "https://files.vnmsimulation.com/profiles/1531377176694489118_iRacing-TIC30-Road-Texture-Feel-Supreme.vnmprofile",
+        "reaction_count": 0,
+        "profile_type": "DirectDrive"
+      },
+      {
+        "filename": "1531377176694489118_iRacing-TIC30-Road-Texture-Feel-Supreme.vnmprofile.tmprofile",
+        "timestamp": "2026-07-27T19:06:10.536000+00:00",
+        "github_raw_url": "https://files.vnmsimulation.com/profiles/1531377176694489118_iRacing-TIC30-Road-Texture-Feel-Supreme.vnmprofile.tmprofile",
+        "reaction_count": 0,
+        "profile_type": "Telemetry"
+      }
+    ]
+  },
+  {
     "thread_id": 1530565738958688256,
     "thread_name": "iRacing 32nm Xtreme and 25nm Supreme TIC - set and forget method",
     "author_name": "mouldyteeth",
