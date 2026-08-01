@@ -6,20 +6,12 @@
       "type": "UI"
     },
     {
-      "version": "2.3.1.9",
-      "url": "https://github.com/vnmsimulation/shifter/releases/download/v2.3.1.9/vnm_shifter_v2.3.1.9.signed.dfu",
+      "version": "2.3.1.11",
+      "url": "https://github.com/vnmsimulation/shifter/releases/download/v2.3.1.11/vnm_shifter_v2.3.1.11.signed.dfu",
       "type": "vnm_shifter_v1",
       "pid": "A3D7",
       "bcd": "0200",
-	    "checksum": "8e697daf80c32f926335588bedb812df89cd9acb"	
-    },
-    {
-      "version": "2.3.1.8",
-      "url": "https://github.com/vnmsimulation/shifter/releases/download/v2.3.1.8/vnm_shifter_v2.3.1.8.signed.dfu",
-      "type": "vnm_shifter_v1",
-      "pid": "A3D7",
-      "bcd": "0200",
-	    "checksum": "0efa5a2f88eddd49a6ba6ad3ee464ed09b28f82a"	
+	    "checksum": "7c2dfc6925b14f8976001e5e1d16385e03fcec63"	
     },
     {
       "version": "2.3.1.10",
