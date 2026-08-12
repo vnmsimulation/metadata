@@ -18,6 +18,12 @@
       "pid": "A3D7"
     },
     {
+      "version": "2.3.1.9",
+      "url": "https://github.com/vnmsimulation/shifter/releases/download/v2.3.1.9/vnm_shifter_v2.3.1.9.signed.dfu",
+      "type": "vnm_shifter_v1",
+      "pid": "A3D7"
+    },
+    {
       "version": "1.1.4.2",
       "url": "https://github.com/vnmsimulation/handbrake/releases/download/v1.1.4.2/vnm_handbrake_v1.1.4.2.signed.dfu",
       "type": "handbrake",
