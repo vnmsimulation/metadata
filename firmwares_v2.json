@@ -165,12 +165,12 @@
       "pid": "A3D8"
     },
     {
-      "version": "2.0.2.2",
-      "url": "https://github.com/vnmsimulation/pedal/releases/download/v2.0.2.2/vnm_pedal_v2.0.2.2.signed.dfu",
+      "version": "2.0.2.4",
+      "url": "https://github.com/vnmsimulation/pedal/releases/download/v2.0.2.4/vnm_pedal_v2.0.2.4.signed.dfu",
       "type": "pedal v2",
       "pid": "A4A8",
       "bcd": "0200",
-      "checksum": "a0c2c61e00858a0dd3664f179aa8a9020dc77f5f"	
+      "checksum": "1a4e925f67258a4240148ec559effd6eee6d57e5"	
     },
     {
       "version": "2.0.2.3",
@@ -195,6 +195,22 @@
       "pid": "A3DD",
       "bcd": "0202",
       "checksum": "f50aebe95cf1103a9d3d4ba68b3104bbedae7517"	
+    },
+    {
+      "version": "2.0.1.1",
+      "url": "https://github.com/vnmsimulation/vnm_gt_steering_wheel_v1/releases/download/v2.0.1.1/vnm_gt_steering_wheel_v2.0.1.1.signed.dfu",
+      "type": "steering_wheel_gt_v2",
+      "pid": "A4D9",
+      "bcd": "0200",
+      "checksum": "843665100b6dc8547c20eb01c9e789517516ed24"   
+    },
+    {
+      "version": "3.0.1.0",
+      "url": "https://github.com/vnmsimulation/VNM_MOTION_CONTROLLER/releases/download/v3.0.1.0/vnm_motion_controller_v3.0.1.0.signed.dfu",
+      "type": "motion_controller_v3",
+      "pid": "A3DD",
+      "bcd": "0203",
+      "checksum": "f08bdac8b5de3439b24e4c4004fec873c9adcd3a"
     }
   ]
 }
