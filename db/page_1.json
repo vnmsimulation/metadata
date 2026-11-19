@@ -1,5 +1,26 @@
 [
   {
+    "thread_id": 1572825101345226864,
+    "thread_name": "[LMU - BETA Telemetry (0.2.36) Profile] (11/18/26) -- Telemetry FFB TIC Mode",
+    "author_name": "metalmayne",
+    "files": [
+      {
+        "filename": "1572825101345226864_TIC_Telemetry_BETA.tmprofile",
+        "timestamp": "2026-11-19T04:05:25.838000+00:00",
+        "github_raw_url": "https://files.vnmsimulation.com/profiles/1572825101345226864_TIC_Telemetry_BETA.tmprofile",
+        "reaction_count": 0,
+        "profile_type": "Telemetry"
+      },
+      {
+        "filename": "1572825101345226864_TIC_Telemetry_BETA.tmprofile.vnmprofile",
+        "timestamp": "2026-11-19T04:05:25.838000+00:00",
+        "github_raw_url": "https://files.vnmsimulation.com/profiles/1572825101345226864_TIC_Telemetry_BETA.tmprofile.vnmprofile",
+        "reaction_count": 0,
+        "profile_type": "DirectDrive"
+      }
+    ]
+  },
+  {
     "thread_id": 1569403916712419472,
     "thread_name": "FIA F4 iRacing",
     "author_name": "proxima_centauri",
